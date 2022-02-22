@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-b_r%+1=3q(x5-ix-lkx32vu!n&@!s0l!8k*07vy%#=v^km_m&f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tubers-v.herokuapp.com']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
@@ -88,13 +89,26 @@ WSGI_APPLICATION = 'tubers.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# use this in development
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'tubers',
+#         'USER': 'postgres',
+#         'PASSWORD': 'coolcool',
+#         'HOST': 'localhost'
+#     }
+# }
+
+#for production
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tubers',
-        'USER': 'postgres',
-        'PASSWORD': 'coolcool',
-        'HOST': 'localhost'
+        'NAME': 'd1ip357lvr9a6e',
+        'USER': 'thswjopwdbizxf',
+        'PASSWORD': '9907060d739eb9780fa3de86c86d7ccc66267ff0dae53396390bdddd0cd98010',
+        'HOST': 'ec2-52-204-196-4.compute-1.amazonaws.com',
+        'PORT': 5432,
     }
 }
 
@@ -139,6 +153,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'tubers/static')
 ]
+django_heroku.settings(locals())
 
 SITE_ID = 1
 

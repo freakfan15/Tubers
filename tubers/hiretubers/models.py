@@ -9,7 +9,7 @@ class Hiretuber(models.Model):
     tuber_id = models.IntegerField()
     tuber_name = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
-    email= models.CharField(max_length=200)
+    email = models.CharField(max_length=200)
     phone = models.CharField(max_length=100)
     state = models.CharField(max_length=100)
     message = models.TextField(blank=True)
