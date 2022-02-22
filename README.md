@@ -32,7 +32,7 @@ python manage.py runserver
 
 ## Technology Stack
 1) Django
-2) PostgreSQL
+2) PostgresSQL
 3) HTML 
 4) CSS
 5) JavaScript
