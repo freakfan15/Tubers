@@ -15,12 +15,14 @@ that mentions all the YouTuber’s details, like name, pricing, work, etc., in o
 helping businesses sort Youtubers efficiently, according to their need, vision, and
 budget.
 
-## Local Implementation
+## LocalImplementation
 1. Clone the Repo and install dependencies
 ```
-https://github.com/freakfan15/Tubers.git
+git clone https://github.com/freakfan15/Tubers.git
+```
+2. Install dependencies.
+```
 pip install requirements.txt
-npm install
 ```
 2. ```python manage.py runserver```
 
