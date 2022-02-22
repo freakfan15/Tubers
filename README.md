@@ -24,7 +24,7 @@ git clone https://github.com/freakfan15/Tubers.git
 ```
 pip install requirements.txt
 ```
-3. 
+3. Start the server
 ```
 python manage.py runserver
 ```
