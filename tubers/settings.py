@@ -90,27 +90,27 @@ WSGI_APPLICATION = 'tubers.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 # use this in development
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'tubers',
-#         'USER': 'postgres',
-#         'PASSWORD': 'coolcool',
-#         'HOST': 'localhost'
-#     }
-# }
-
-#for production
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd1ip357lvr9a6e',
-        'USER': 'thswjopwdbizxf',
-        'PASSWORD': '9907060d739eb9780fa3de86c86d7ccc66267ff0dae53396390bdddd0cd98010',
-        'HOST': 'ec2-52-204-196-4.compute-1.amazonaws.com',
-        'PORT': 5432,
+        'NAME': 'tubers',
+        'USER': 'postgres',
+        'PASSWORD': 'coolcool',
+        'HOST': 'localhost'
     }
 }
+
+#for production
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd1ip357lvr9a6e',
+#         'USER': 'thswjopwdbizxf',
+#         'PASSWORD': '9907060d739eb9780fa3de86c86d7ccc66267ff0dae53396390bdddd0cd98010',
+#         'HOST': 'ec2-52-204-196-4.compute-1.amazonaws.com',
+#         'PORT': 5432,
+#     }
+# }
 
 
 # Password validation
