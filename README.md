@@ -24,7 +24,10 @@ git clone https://github.com/freakfan15/Tubers.git
 ```
 pip install requirements.txt
 ```
-2. ```python manage.py runserver```
+3. 
+```
+python manage.py runserver
+```
 
 
 ## Technology Stack
