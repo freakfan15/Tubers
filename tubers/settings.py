@@ -104,7 +104,7 @@ WSGI_APPLICATION = 'tubers.wsgi.application'
 #for production
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd1ip357lvr9a6e',
         'USER': 'thswjopwdbizxf',
         'PASSWORD': '9907060d739eb9780fa3de86c86d7ccc66267ff0dae53396390bdddd0cd98010',
